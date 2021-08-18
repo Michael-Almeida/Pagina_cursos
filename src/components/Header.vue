@@ -69,12 +69,11 @@ export default {
   color: #000000;
   display: flex;
   flex-direction: row;
-  width: 100%;
   align-items: center;
   position: absolute;
 }
 .menu ul li {
-  padding: 4px 14px;
+
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 900;

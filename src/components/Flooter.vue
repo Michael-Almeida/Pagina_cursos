@@ -16,6 +16,10 @@ export default {
   padding: 10px;
   font-family: "Times New Roman", Times, serif;
   background-color: #dce8ec;
-  position: relative;
+  position: fixed;
+
+  width: 100%;
+  bottom: 0;
+
 }
 </style>

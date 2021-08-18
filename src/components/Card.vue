@@ -1,6 +1,7 @@
 <template>
   <div class="card">
     <h2>{{ title }}</h2>
+    <img :src="image" class="imagem-card">
     <p>{{ description }}</p>
     <p>{{ valor }}</p>
     <button>Fazer Pedido</button>
@@ -9,13 +10,13 @@
 
 <script>
 export default {
-  name: "card",
+  name: "Card",
   props: {
     title: String,
     description: String,
     valor: String,
-    image: Image,
-  },
+    image: Image
+  }
 };
 </script>
 
@@ -48,5 +49,9 @@ export default {
   background-color: #c3121c;
   color: #ffffff;
   border: none;
+}
+.imagem-card {
+  height: 90px;
+  width: 150px;
 }
 </style>
