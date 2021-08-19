@@ -1,8 +1,8 @@
 <template>
   <div class="card">
+
+    <img :src="image" class="imagem-card" />
     <h2>{{ title }}</h2>
-    <img :src="image" class="imagem-card">
-    <p>{{ description }}</p>
     <p>{{ valor }}</p>
     <button>Fazer Pedido</button>
   </div>
@@ -15,8 +15,8 @@ export default {
     title: String,
     description: String,
     valor: String,
-    image: Image
-  }
+    image: Image,
+  },
 };
 </script>
 
@@ -28,17 +28,19 @@ export default {
   margin: 20px 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+align-items: left;
 }
 
 .card h2 {
   font-size: 18px;
   font-weight: bold;
   color: #000000;
+  text-align: left;
+
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 18px;
   color: #000000;
 }
 
@@ -46,12 +48,12 @@ export default {
   width: 170px;
   height: 40px;
   border-radius: 6px;
-  background-color: #c3121c;
-  color: #ffffff;
+  background-color: rgb(226, 221, 221);
+  color: black;
   border: none;
 }
 .imagem-card {
-  height: 90px;
-  width: 150px;
+  height: 115px;
+  width: 196px;
 }
 </style>
